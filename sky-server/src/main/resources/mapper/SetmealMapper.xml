@@ -8,7 +8,7 @@
         values (#{categoryId}, #{name}, #{price}, #{status}, #{description}, #{image}, #{createTime}, #{updateTime}
                , #{createUser}, #{updateUser})
     </insert>
-    <select id="pageQuery" resultType="com.sky.vo.SetmealVO">
+    <select id="pageQuery" resultType="com.sky.dto.SetmealDTO">
         select
         s.*,c.name categoryName
         from
